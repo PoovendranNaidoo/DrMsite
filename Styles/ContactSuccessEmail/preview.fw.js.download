@@ -1,0 +1,133 @@
+(function ($, global) {
+    var IframesLoaded = 0,
+        previewfw = {
+            onLoadAction: function (opts) {
+                var options, iFrame, iFrameLength;
+                options = opts || {};
+                iFrame = options.iFrame || null;
+                iFrameLength = options.length || 0;
+
+                if (iFrame) {
+                    $(iFrame.contentWindow)
+                        .off('load.general')
+                        .on('load.general', function () {
+                            showIframe(iFrame);
+                        });
+                    setTimeout(function () {
+                        showIframe(iFrame);
+                    }, 12000);
+
+                    var showIframe = (function () {
+                        var shown = false;
+                        return function showIframeInner(iFrame) {
+                            if (shown) return;
+
+                            iFrame.style.opacity = 1;
+                            IframesLoaded++;
+                            if (IframesLoaded === iFrameLength) {
+                                // Show body after all iFrames are loaded
+                                document.body.style.opacity = 1;
+                            }
+                            shown = true;
+                        };
+                    })();
+                }
+            },
+
+            calcDevicesPositionAndScale: function (deviceMode, width, height) {
+                var deviceIFrame,
+                    $body = $('body'),
+                    previewPaneWrapper = $('#PreviewPaneWrapper'),
+                    allDevicesIFrames = previewPaneWrapper.find(
+                        'iframe.NEEPreviewInside'
+                    );
+
+                if (!deviceMode) {
+                    deviceMode = $.dmfw.isMultiView() ? 'all' : 'desktop';
+                }
+
+                if (deviceMode == 'all') {
+                    // calculate screen size and position
+                    var marginWidth = !(
+                        this.inPreviewMode ||
+                        $.smartSiteManager.inSmartSiteRulePreviewMode
+                    )
+                        ? parseInt(
+                              $('.dudaoneInnerShellWrapper').css('width'),
+                              10
+                          )
+                        : 0;
+                    width = width || parseInt($body.css('width')) - marginWidth;
+                    height = height || parseInt($body.css('height')) - 100;
+
+                    if ($body.is('.firstTimeMode')) {
+                        height =
+                            parseInt($body.css('height')) -
+                            parseInt(
+                                $('#editorSettingsTopBar').css('height'),
+                                10
+                            ) -
+                            parseInt(
+                                $('#bottomThemesWrapper').css('height'),
+                                10
+                            );
+                    }
+
+                    previewPaneWrapper.css({
+                        transform: `scale(${window.innerWidth / 1920})`,
+                    });
+
+                    $('.PreviewPaneInnerWrapper.desktop').show();
+                    $('.PreviewPaneInnerWrapper.tablet').show();
+                    $('.PreviewPaneInnerWrapper.mobile').show();
+
+                    // improve text legibility for very light fonts
+                    setTimeout(function () {
+                        $('.PreviewPaneInnerWrapper.mobile iframe')
+                            .contents()
+                            .find('head')
+                            .append(
+                                '<style>body * {-webkit-text-stroke: 0.8px;}</style>'
+                            );
+                        $('.PreviewPaneInnerWrapper.tablet iframe')
+                            .contents()
+                            .find('head')
+                            .append(
+                                '<style>body * {-webkit-text-stroke: 1px;}</style>'
+                            );
+                    }, 2000);
+                } else {
+                    $('.PreviewPaneInnerWrapper').css({
+                        '-webkit-transform': '',
+                        transform: '',
+                    });
+                    $('.PreviewPaneInnerWrapper.desktop').css({
+                        top: 0,
+                        left: 0,
+                    });
+                    $(
+                        '.PreviewPaneInnerWrapper.tablet, .PreviewPaneInnerWrapper.mobile'
+                    ).hide();
+                    allDevicesIFrames.removeClass('active');
+                    deviceIFrame = previewPaneWrapper.find(
+                        '.PreviewPaneInnerWrapper[data-device="' +
+                            deviceMode +
+                            '"] iframe.NEEPreviewInside'
+                    );
+                    deviceIFrame.addClass('active');
+                }
+                for (var i = 0; i < allDevicesIFrames.length; i++) {
+                    allDevicesIFrames[i].contentWindow &&
+                        allDevicesIFrames[i].contentWindow.$ &&
+                        allDevicesIFrames[i].contentWindow.$.layoutManager &&
+                        allDevicesIFrames[
+                            i
+                        ].contentWindow.$.layoutManager.updateContainerMinimumHeight();
+                }
+            },
+        };
+
+    $.extend({
+        previewfw: previewfw,
+    });
+})(jQuery, this);
