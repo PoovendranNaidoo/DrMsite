@@ -4551,12 +4551,12 @@
 																				<input type="hidden" name="message"
 																					value="PLease add whatsApp contact to the group please.">
 
-																				<div class=" required dmRespDesignCol large-12"
+																				<div class="required dmRespDesignCol large-12" 
 																					style="font-size: larger; color: #000000;"
 																					id="1340342606">
 																					
-																					<input type="tel" name="phone"
-																						style="font-size: larger; color: #000000;"
+																					<input type="tel" name="phone"  required
+																						style="font-size: larger; color: #000000; "
 																						id="1375689798"
 																						placeholder="Your Phone No."
 																						data-placeholder-original="Your Phone no.">
@@ -4568,7 +4568,7 @@
 																					class="dmWidgetClear"></span>
 																				<div class="dmformsubmit"
 																					id="1071801579">
-																					<input name="submit"
+																					<input name="submit" onclick="checkWhatsappInput()"
 																						style="color: #8c8c8c; font-size: large; "
 																						class="u_1036631749 align-center gold-button shine-button dmButtonLink dmWwr default dmOnlyButton dmDefaultGradient"
 																						type="submit" value="Subscribe"
@@ -4700,9 +4700,6 @@
 		window.collections = {};
 		window.currentLanguage = "ENGLISH"
 		window.isSitePreview = true;
-
-
-
 	</script>
 	<script type="text/javascript">
 
@@ -4889,6 +4886,32 @@
 		var _dm_gaq = {};
 		var _gaq = _gaq || [];
 		var _dm_insite = [];
+	</script>
+
+	<!-- Check button words -->
+	<script>
+		function checkWhatsappInput() {
+		  var input = document.getElementById('1375689798').value;
+		  var button = document.getElementById('1036631749');
+
+		  if (input==="")
+		  {button.value = "Subscribe";} 
+		  else 
+		  {button.value = "Sending...";}
+		  
+		}
+
+		document.addEventListener('DOMContentLoaded', function () {
+			var form = document.getElementById('1398758978');
+			var submitButton = document.getElementById('1764766576');
+
+			form.addEventListener('input', function () {
+				if (form.checkValidity()) 
+					{submitButton.value = "Click to Subscribe...";}
+				else
+					{submitButton.value = "Subscribe";}
+			});
+		});
 	</script>
 
 	<div style="display:none;" id="P6iryBW0Wu"></div>
