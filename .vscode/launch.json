@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             //"url": "http://127.0.0.1:3000/Styles/General/d2925256e486a7e94ee64ce5e8efc929.html",
-            "url": "http://127.0.0.1:3000/",
+            "url": "http://127.0.0.1:3000/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

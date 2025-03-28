@@ -99,6 +99,7 @@
 		window.Parameters.LayoutVariationID[window._currentDevice] = 5;
 	</script>
 
+
 	<!-- Injecting site-wide to the head -->
 	<!-- End Injecting site-wide to the head -->
 	<!-- Inject secured cdn script -->
@@ -367,22 +368,70 @@
 
 	</style>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<!-- loadCSS function fonts.jsp-->
 
 
+
 	<link type="text/css" rel="stylesheet" href="./css2">
+
 	<link type="text/css" rel="stylesheet" href="./css2(1)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(2)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(3)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(4)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(5)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(6)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(7)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(8)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(9)">
+
 	<link type="text/css" rel="stylesheet" href="./css2(10)">
+
+
+
+
 
 	<!-- RT CSS Include d-css-runtime-desktop-one-package-new-->
 	<link rel="stylesheet" type="text/css" href="./d-css-runtime-desktop-one-package-new.min.css">
@@ -409,8 +458,13 @@
 	<style id="pageAdditionalWidgetsCss" type="text/css">
 	</style>
 
+
+
+
 	<!-- Site CSS -->
 	<link type="text/css" rel="stylesheet" href="./d2925256e486a7e94ee64ce5e8efc929.css" id="siteGlobalCss">
+
+
 
 	<style id="customWidgetStyle" type="text/css">
 
@@ -430,27 +484,6 @@
 		*#dm div.dmContent h1,
 		*#dm div.dmFooter h1 {
 			color: rgb(180, 143, 142);
-		}
-
-		*#dm *.p_hfcontainer a.u_1630937705 {
-			display: block !important;
-			float: none !important;
-			top: 0 !important;
-			left: 0 !important;
-			width: auto !important;
-			position: relative !important;
-			height: 43px !important;
-			padding-top: 10px !important;
-			padding-left: 0px !important;
-			padding-bottom: 0px !important;
-			max-width: 100% !important;
-			padding-right: 0px !important;
-			min-width: 25px !important;
-			text-align: center !important;
-			margin-right: 45.3125px !important;
-			margin-left: 43px !important;
-			margin-top: 10px !important;
-			margin-bottom: 0px !important;
 		}
 
 		*#dm div.dmRespCol>* {}
@@ -508,6 +541,15 @@
 		*#dm *[data-buttonstyle] div.dmInner *.dmWidget {
 			border-width: 0px;
 		}
+
+		p {	
+    		background: linear-gradient(180deg,  #f6e27a 5%, #cb9b51 80%);
+    		-webkit-background-clip: text;
+            background-clip: text;
+    		-webkit-text-fill-color: transparent;
+			}
+
+
 
 		*#dm *[data-buttonstyle] div.dmInner *.dmWidget {
 			border-style: solid;
@@ -591,11 +633,112 @@
 			color: rgba(255, 255, 255, 1);
 		}
 
+
+/* Gold Button*/
+button.goldrose-btn { 
+	align-items: center;
+	background: linear-gradient(90deg, #d5a77c 0%, #efbf8f 45%, #7c5231 100%);
+	border: 2px solid #d5a77c;
+	border-radius: 0.88em;
+  padding: 8px 30px;
+  color: #0;
+}
+
+.gold-button {
+    color: #000000;
+    background-image: linear-gradient(180deg, #f6e27a 20%, #cb9b51 80%);
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 5px;
+    border-width: 0;
+    display: inline-flex;
+    align-items: center;
+  
+    box-shadow: 0 4px 12px 0 #ffcd57;
+    transition: all 0.5s ease;
+
+  	justify-content: center;
+  	text-align: center;
+  text-decoration: none;
+  
+    position: relative;
+    overflow: hidden;
+  
+  flex: 1;
+}
+
+/* Shine */
+
+.shine-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-button:after {
+	content:'';
+  top:0;
+	transform:translateX(100%);
+	width:100%;
+	height:220px;
+	position: absolute;
+	z-index:1;
+	animation: slide 2s infinite;
+
+  /* 
+  CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
+  */
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+}
+
+/* shine animation */
+
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
+}
+
+
+/* silver button */
+
+.silver-button {
+    background-color: rgba(5, 188, 191, 0);
+    color: #000000;
+    background-image: linear-gradient(180deg, #fefefe 20%, #9f9f9f 80%);
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: 5px;
+    border-width: 0;
+    display: inline-flex;
+    align-items: center;
+  
+    box-shadow: 0 4px 12px 0 #ffffff;
+    transition: all 0.5s ease;
+  
+    justify-content: center;
+  	text-align: center;
+  	text-decoration: none;
+  
+    position: relative;
+    overflow: hidden;
+  
+  flex: 1;
+}
+
+/* Gold Button*/
 		*#dm *[data-buttonstyle] div.dmInner *#site_content *.dmWidget,
 		*#dm *[data-buttonstyle] div.dmInner *.dmHeader *.dmWidget,
 		*#dm div.dmOuter div.dmInner *.ecwid *.ecwid-btn.ecwid-btn--primary,
 		*#dm div.dmOuter div.dmInner *.ecwid *.form-control__button {
-			background-color: rgba(112, 66, 148, 1);
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 			border-radius: 0px;
 			-webkit-border-radius: 0px;
 			-moz-border-radius: 0px;
@@ -824,7 +967,7 @@
 		}
 
 		*#dm *.dmInner div.dmHeader.u_hcontainer {
-			background-color: rgba(255, 255, 255, 0) !important;
+			background-color: rgba(0, 0, 0, 0) !important;
 		}
 
 		*#dm *.dmInner div.dmHeader {
@@ -1273,113 +1416,50 @@
 			display: none !important;
 		}
 
-		*#dm *.p_hfcontainer a.u_1933133831 {
-			display: block !important;
-			float: none !important;
-			top: 0 !important;
-			left: 0 !important;
-			width: auto !important;
-			position: relative !important;
-			height: 43px !important;
-			padding-top: 10px !important;
-			padding-left: 0px !important;
-			padding-bottom: 0px !important;
-			max-width: 100% !important;
-			padding-right: 0px !important;
-			min-width: 25px !important;
-			text-align: center !important;
-			margin-right: 45.3125px !important;
-			margin-left: 43px !important;
-			margin-top: 10px !important;
-			margin-bottom: 0px !important;
+
+
+		*#dm *.p_hfcontainer *.u_1324663978.main-navigation.unifiednav:not([image]) *.unifiednav__container[data-depth="0"] {
+			top: calc(100% - 0px) !important;
 		}
 
-		/* Shine */
-
-		.shine-button {
-			position: relative;
-			overflow: hidden;
+		*#dm *.p_hfcontainer *.u_1324663978.main-navigation.unifiednav[data-nav-structure="HORIZONTAL"] *.unifiednav__container:not([data-depth])>*.unifiednav__item-wrap:not(:last-child) *.unifiednav__container[data-depth="0"] {
+			left: 0px !important;
 		}
 
-		.shine-button:after {
-			content: '';
-			top: 0;
-			transform: translateX(100%);
-			width: 100%;
-			height: 220px;
-			position: absolute;
-			z-index: 1;
-			animation: slide 2s infinite;
+		*#dm *.p_hfcontainer *.u_1324663978.main-navigation.unifiednav[data-nav-structure="SPLIT"] *.unifiednav__container:not([data-depth]) *:not(:last-of-type)>*.unifiednav__item-wrap *.unifiednav__container[data-depth="0"] {
+			left: 0px !important;
 		}
 
-			/* CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 	*/
+		*#dm *.p_hfcontainer *.u_1324663978.main-navigation.unifiednav[data-nav-structure="SPLIT"] *.unifiednav__container:not([data-depth]) *:last-of-type>*.unifiednav__item-wrap:not(:last-child) *.unifiednav__container[data-depth="0"] {
+			left: 0px !important;
+		}
 
-			*#dm *.p_hfcontainer *.u_1324663978.main-navigation.unifiednav:not([image]) *.unifiednav__container[data-depth="0"] {
-				top: calc(100% - 0px) !important;
-			}
+		*#dm *.p_hfcontainer div.u_1058183703 {
+			background-color: rgba(255, 255, 255, 1) !important;
+		}
 
-			.gold-button {
-				color: #000000;
-				background-image: linear-gradient(180deg, #f6e27a 20%, #cb9b51 80%);
-				font-weight: bold;
-				padding: 12px 20px;
-				border-radius: 8px;
-				margin: 5px;
-				border-width: 0;
-				display: inline-flex;
-				align-items: center;
+		*#dm *.p_hfcontainer nav.u_1324663978.main-navigation.unifiednav *.unifiednav__container[data-depth]>*.unifiednav__item-wrap:not(:last-child)::after {
+			border-top-width: 0 !important;
+		}
 
-				box-shadow: 0 4px 12px 0 #ffcd57;
-				transition: all 0.5s ease;
+		*#dm *.p_hfcontainer div.u_1493140061 {
+			background-repeat: no-repeat !important;
+			background-image: url('https://lirp.cdn-website.com/md/dmip/dms3rep/multi/opt/lake-black-and-white-2880w.jpg') !important;
+			background-size: cover !important;
+			background-color: rgba(255, 255, 255, 1) !important;
+		}
 
-				justify-content: center;
-				text-align: center;
-				text-decoration: none;
+		*#dm *.p_hfcontainer div.u_1689418441 {
+			background-color: rgba(255, 255, 255, 1) !important;
+		}
 
-				position: relative;
-				overflow: hidden;
+		*#dm *.p_hfcontainer div.u_1615137454 {
+			background-color: rgba(255, 255, 255, 1) !important;
+		}
 
-				flex: 1;
-			}
-
-			*#dm *.p_hfcontainer *.u_1324663978.main-navigation.unifiednav[data-nav-structure="HORIZONTAL"] *.unifiednav__container:not([data-depth])>*.unifiednav__item-wrap:not(:last-child) *.unifiednav__container[data-depth="0"] {
-				left: 0px !important;
-			}
-
-			*#dm *.p_hfcontainer *.u_1324663978.main-navigation.unifiednav[data-nav-structure="SPLIT"] *.unifiednav__container:not([data-depth]) *:not(:last-of-type)>*.unifiednav__item-wrap *.unifiednav__container[data-depth="0"] {
-				left: 0px !important;
-			}
-
-			*#dm *.p_hfcontainer *.u_1324663978.main-navigation.unifiednav[data-nav-structure="SPLIT"] *.unifiednav__container:not([data-depth]) *:last-of-type>*.unifiednav__item-wrap:not(:last-child) *.unifiednav__container[data-depth="0"] {
-				left: 0px !important;
-			}
-
-			*#dm *.p_hfcontainer div.u_1058183703 {
-				background-color: rgba(255, 255, 255, 1) !important;
-			}
-
-			*#dm *.p_hfcontainer nav.u_1324663978.main-navigation.unifiednav *.unifiednav__container[data-depth]>*.unifiednav__item-wrap:not(:last-child)::after {
-				border-top-width: 0 !important;
-			}
-
-			*#dm *.p_hfcontainer div.u_1493140061 {
-				background-repeat: no-repeat !important;
-				background-image: url('https://lirp.cdn-website.com/md/dmip/dms3rep/multi/opt/lake-black-and-white-2880w.jpg') !important;
-				background-size: cover !important;
-				background-color: rgba(255, 255, 255, 1) !important;
-			}
-
-			*#dm *.p_hfcontainer div.u_1689418441 {
-				background-color: rgba(255, 255, 255, 1) !important;
-			}
-
-			*#dm *.p_hfcontainer div.u_1615137454 {
-				background-color: rgba(255, 255, 255, 1) !important;
-			}
-
-			*#dm *.p_hfcontainer div.u_1268430833 {
-				background-color: rgba(255, 255, 255, 1) !important;
-			}
+		*#dm *.p_hfcontainer div.u_1268430833 {
+			background-color: rgba(255, 255, 255, 1) !important;
+		}
 	</style>
 	<style id="headerDeviceCss" type="text/css">
 		*#dm *.p_hfcontainer div.u_1571063569 {
@@ -2141,15 +2221,15 @@
 		*#dm *.p_hfcontainer a.u_1933133831 {
 			display: block !important;
 			float: none !important;
-			top: 0px !important;
-			left: 0px !important;
-			width: calc(100% - 43px) !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: auto !important;
 			position: relative !important;
 			height: 43px !important;
-			padding-top: 0px !important;
+			padding-top: 10px !important;
 			padding-left: 0px !important;
 			padding-bottom: 0px !important;
-			max-width: 368px !important;
+			max-width: 100% !important;
 			padding-right: 0px !important;
 			min-width: 25px !important;
 			text-align: center !important;
@@ -2158,6 +2238,121 @@
 			margin-top: 10px !important;
 			margin-bottom: 0px !important;
 		}
+
+		*#dm *.p_hfcontainer a.u_1036631749 {
+			display: block !important;
+			float: none !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: auto !important;
+			position: relative !important;
+			height: 43px !important;
+			padding-top: 10px !important;
+			padding-left: 0px !important;
+			padding-bottom: 0px !important;
+			max-width: 100% !important;
+			padding-right: 0px !important;
+			min-width: 25px !important;
+			text-align: center !important;
+			margin-right: 45.3125px !important;
+			margin-left: 43px !important;
+			margin-top: 10px !important;
+			margin-bottom: 0px !important;
+		}
+
+		*#dm *.p_hfcontainer a.u_1214491732 {
+			display: block !important;
+			float: none !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: auto !important;
+			position: relative !important;
+			height: 43px !important;
+			padding-top: 10px !important;
+			padding-left: 0px !important;
+			padding-bottom: 0px !important;
+			max-width: 100% !important;
+			padding-right: 0px !important;
+			min-width: 25px !important;
+			text-align: center !important;
+			margin-right: 45.3125px !important;
+			margin-left: 43px !important;
+			margin-top: 10px !important;
+			margin-bottom: 0px !important;
+		}
+
+		*#dm *.p_hfcontainer a.u_1959139360 {
+			display: block !important;
+			float: none !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: auto !important;
+			position: relative !important;
+			height: 43px !important;
+			padding-top: 10px !important;
+			padding-left: 0px !important;
+			padding-bottom: 0px !important;
+			max-width: 100% !important;
+			padding-right: 0px !important;
+			min-width: 25px !important;
+			text-align: center !important;
+			margin-right: 45.3125px !important;
+			margin-left: 43px !important;
+			margin-top: 10px !important;
+			margin-bottom: 0px !important;
+		}
+
+		*#dm *.p_hfcontainer a.u_1630937705 {
+			display: block !important;
+			float: none !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: auto !important;
+			position: relative !important;
+			height: 43px !important;
+			padding-top: 10px !important;
+			padding-left: 0px !important;
+			padding-bottom: 0px !important;
+			max-width: 100% !important;
+			padding-right: 0px !important;
+			min-width: 25px !important;
+			text-align: center !important;
+			margin-right: 45.3125px !important;
+			margin-left: 43px !important;
+			margin-top: 10px !important;
+			margin-bottom: 0px !important;
+		}
+
+		*#dm *.p_hfcontainer a.u_1756586440 {
+			display: block !important;
+			float: none !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: auto !important;
+			position: relative !important;
+			height: 43px !important;
+			padding-top: 10px !important;
+			padding-left: 0px !important;
+			padding-bottom: 0px !important;
+			max-width: 100% !important;
+			padding-right: 0px !important;
+			min-width: 25px !important;
+			text-align: center !important;
+			margin-right: 45.3125px !important;
+			margin-left: 43px !important;
+			margin-top: 10px !important;
+			margin-bottom: 0px !important;
+		}
+
+
+
+
+
+
+
+
+
+
 
 		*#dm *.p_hfcontainer nav.u_1324663978.unifiednav *.middleLogoLink {
 			width: 198px !important;
@@ -2271,7 +2466,7 @@
 			float: none !important;
 			top: 0px !important;
 			left: 0px !important;
-			width: 200% !important;
+			width: calc(100% - -16px) !important;
 			position: relative !important;
 			height: auto !important;
 			padding-top: 0px !important;
@@ -2279,7 +2474,7 @@
 			padding-bottom: 0px !important;
 			margin-right: 0px !important;
 			margin-left: -16px !important;
-			max-width: 513px !important;
+			max-width: 213px !important;
 			margin-top: 0px !important;
 			margin-bottom: 0px !important;
 			padding-right: 0px !important;
@@ -2526,25 +2721,10 @@
 			display: none !important;
 		}
 
-		*#dm *.dmBody a.u_1067040187 {
-			border-radius: 0px !important;
-			-moz-border-radius: 0px !important;
-			-webkit-border-radius: 0px !important;
-			border-style: solid !important;
-			border-width: 0px !important;
-		}
-
 		*#dm *.dmBody a.u_1762909813 *.iconBg {
 			display: none !important;
 		}
 
-		*#dm *.dmBody a.u_1762909813 {
-			border-radius: 0px !important;
-			-moz-border-radius: 0px !important;
-			-webkit-border-radius: 0px !important;
-			border-style: solid !important;
-			border-width: 0px !important;
-		}
 
 		*#dm *.dmBody div.u_1795332710 {
 			background-repeat: no-repeat !important;
@@ -2634,24 +2814,24 @@
 		}
 
 		*#dm *.dmBody a.u_1067040187 {
-			padding-top: 0px !important;
+			display: block !important;
+			float: none !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: auto !important;
+			position: relative !important;
+			height: 43px !important;
+			padding-top: 10px !important;
 			padding-left: 0px !important;
 			padding-bottom: 0px !important;
-			float: none !important;
-			margin-right: auto !important;
-			margin-left: auto !important;
-			top: 0px !important;
-			max-width: 280px !important;
-			left: 0 !important;
-			width: calc(100% - 340px) !important;
-			margin-top: 42px !important;
-			position: relative !important;
-			margin-bottom: 10px !important;
+			max-width: 100% !important;
 			padding-right: 0px !important;
 			min-width: 25px !important;
 			text-align: center !important;
-			height: 45px !important;
-			display: block !important;
+			margin-right: 45.3125px !important;
+			margin-left: 43px !important;
+			margin-top: 10px !important;
+			margin-bottom: 0px !important;
 		}
 
 		*#dm *.dmBody div.u_1646917820 {
@@ -2836,34 +3016,40 @@
 		*#dm *.d-page-1716942098 DIV.dmInner {
 			background-color: rgba(255, 255, 255, 1) !important;
 			background-repeat: no-repeat !important;
+			background-image: url('https://lirp.cdn-website.com/md/unsplash/dms3rep/multi/opt/photo-1492596277896-fe714329e1e8-2880w.jpg') !important;
+			background-size: cover !important;
+			background-attachment: fixed !important;
 			background-position: 0% 0% !important;
 		}
 
 		*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight {
 			background-color: rgba(255, 255, 255, 1) !important;
 			background-repeat: no-repeat !important;
+			background-image: url('https://lirp.cdn-website.com/md/unsplash/dms3rep/multi/opt/photo-1492596277896-fe714329e1e8-2880w.jpg') !important;
+			background-size: cover !important;
+			background-attachment: fixed !important;
 			background-position: 0% 0% !important;
 		}
 
 		*#dm *.dmBody a.u_1762909813 {
-			padding-top: 0px !important;
+			display: block !important;
+			float: none !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: auto !important;
+			position: relative !important;
+			height: 43px !important;
+			padding-top: 10px !important;
 			padding-left: 0px !important;
 			padding-bottom: 0px !important;
-			float: none !important;
-			margin-right: auto !important;
-			margin-left: auto !important;
-			top: 0px !important;
 			max-width: 100% !important;
-			left: 0 !important;
-			width: 280px !important;
-			margin-top: 21px !important;
-			position: relative !important;
-			margin-bottom: 10px !important;
 			padding-right: 0px !important;
-			min-width: 0 !important;
+			min-width: 25px !important;
 			text-align: center !important;
-			height: 45.9896px !important;
-			display: block !important;
+			margin-right: 45.3125px !important;
+			margin-left: 43px !important;
+			margin-top: 10px !important;
+			margin-bottom: 0px !important;
 		}
 
 		*#dm *.dmBody div.u_1834421714 {
@@ -2893,9 +3079,9 @@
 			width: auto !important;
 			position: relative !important;
 			height: auto !important;
-			padding-top: 50px !important;
+			padding-top: 31px !important;
 			padding-left: 40px !important;
-			padding-bottom: 100px !important;
+			padding-bottom: 31px !important;
 			margin-right: 0px !important;
 			margin-left: 0px !important;
 			max-width: 100% !important;
@@ -2976,7 +3162,17 @@
 		}
 	</style>
 
+
+
+
+
+
 	<!-- End render the required css and JS in the head section -->
+
+
+
+
+
 
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://minokanadesan50d8b246.website-edit.com/">
@@ -2995,6 +3191,7 @@
 	<meta property="og:description"
 		content="DrMinx medical spa is a cosmetic institute that offers services from basic cosmetic requirements to more advanced aesthetic procedures.">
 	<meta property="og:title" content="Dr Minx | Home">
+
 
 	<style>
 		:root {
@@ -3091,9 +3288,7 @@
 								<div>
 									<div id="iscrollBody">
 										<div id="site_content">
-
-											<!-- Top Header -->
-											<div class="fHeader d-header-wrapper">
+											<div class="dmHeaderContainer fHeader d-header-wrapper">
 												<div id="hcontainer" class="dmHeader p_hfcontainer u_hcontainer"
 													freeheader="true" layout="89d625c63999422c892579ec435bd6c5===header"
 													data-scrollable-target="body" data-scrollable-target-threshold="1"
@@ -3101,7 +3296,6 @@
 													mini-header-show-only-navigation-row="true">
 													<div dm:templateorder="85"
 														class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236">
-														<!-- Logo -->
 														<div class="u_1615137454 dmRespRow mini-header-hide-row"
 															id="1615137454">
 															<div class="dmRespColsWrapper" id="1127010905">
@@ -3111,7 +3305,7 @@
 																		data-element-type="image"
 																		data-widget-type="image" id="1777515555"
 																		editablewidget="true"> <a id="1600985399"><img
-																				src="./Dr+Minx+Logo+Final-1920w3.png"
+																				src="./Dr+Minx+Logo+Final-1920w.png"
 																				id="1141566774" class=""
 																				data-dm-image-path="https://irp-cdn.multiscreensite.com/1d469015/dms3rep/multi/Dr+Minx+Logo+Final.png"
 																				onerror="handleImageLoadError(this)"></a>
@@ -3119,12 +3313,98 @@
 																</div>
 															</div>
 														</div>
-
+														<div class="u_1268430833 dmRespRow mini-header-hide-row"
+															style="text-align: center;" id="1268430833">
+															<div class="dmRespColsWrapper" id="1995244909">
+																<div class="dmRespCol small-12 medium-6 large-6 has-one-widget-only"
+																	id="1782975488"> 
+																	<a
+																		class="u_1035361070 default dmDefaultGradient align-center gold-button shine-button dmCall voipReplacement  dmNoMark dmWwr"
+																		contenteditable="false"
+																		onclick=";return dm_gaq_push_event(&#39;ClickToCall&#39;, &#39;Call&#39;,null,&#39;d2925256e486a7e94ee64ce5e8efc929&#39;, this);"
+																		id="1035361070" dmle_extension="clicktocall"
+																		data-element-type="clicktocall"
+																		data-buttonstyle="THICK_BORDER_ROUND" wr="true"
+																		data-display-type="block" icon="true"
+																		surround="true" description="Call Us" adwords="" style="color: #8c8c8c;"
+																		icon-name="icon-phone" phone="012 111 8070"
+																		text="" image="" target="_blank"> <span
+																			class="iconBg" aria-hidden="true"> <span
+																				class="icon hasFontIcon icon-phone"></span>
+																		</span>
+																		<span class="text">  </span>
+																		<span class="text phoneNumHolder"> 012 111 8070</span>
+																		</a>
+																</div>
+																<div class="dmRespCol small-12 medium-6 large-6 has-one-widget-only" 
+																	id="1165930468">
+																	<a data-display-type="block"
+																		class="u_1933133831 align-center gold-button shine-button dmButtonLink  dmWwr default dmOnlyButton dmDefaultGradient"
+																		file="false" style="color: #8c8c8c; "
+																		href="/Styles/ContactUs/d2925256e486a7e94ee64ce5e8efc929.html"
+																		data-element-type="dButtonLinkId"
+																		id="1933133831"
+																		data-buttonstyle="THICK_BORDER_ROUND"
+																		raw_url="/">
+																		<span class="iconBg" id="1625996088">
+																			<span class="icon hasFontIcon icon-star"
+																				id="1893800312"></span>
+																		</span>
+																		<span class="text" id="1616484683">Book a Consultation</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="u_1058183703 dmRespRow mini-header-show-row"
+															style="text-align: center;" id="1058183703">
+															<div class="dmRespColsWrapper" id="1668215544">
+																<div class="u_1828438318 dmRespCol small-12 medium-12 large-12 has-one-widget-only"
+																	id="1828438318">
+																	<nav class="u_1324663978 effect-border main-navigation unifiednav dmLinksMenu"
+																		role="navigation"
+																		layout-main="horizontal_nav_layout_6"
+																		layout-sub="submenu_horizontal_1"
+																		data-show-vertical-sub-items="HOVER"
+																		id="1324663978" dmle_extension="onelinksmenu"
+																		data-element-type="onelinksmenu"
+																		data-logo-src="https://irp-cdn.multiscreensite.com/1d469015/dms3rep/multi/Dr+Minx+Logo+Final.png"
+																		data-nav-structure="HORIZONTAL" wr="true"
+																		icon="true" surround="true" adwords=""
+																		navigation-id="unifiedNav" data-from-nav="true"
+																		data-sub-nav="true" data-items="-1"
+																		custom-li-class="" custom-ul-class=""
+																		custom-a-class="" custom-inner-ul-class=""
+																		custom-nested-inner-ul-class=""
+																		custom-span-class="" data-links-level="0"
+																		is-build-your-own="false"
+																		data-build-your-own="W10=">
+																		<ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/Home/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_00 currentPage dmNavItemSelected" target="" data-target-page-alias="" data-auto="selected-page" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/" tabindex="0"><span class="nav-item-text " data-link-text="Home" data-auto="page-text-style">Home<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			 <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/About/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101661768" target="" data-target-page-alias="" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/about" tabindex="0"><span class="nav-item-text " data-link-text="About Us" data-auto="page-text-style">About Us<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/Treatments/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101628177" target="" data-target-page-alias="" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/services" tabindex="0"> <span class="nav-item-text " data-link-text="Treatments" data-auto="page-text-style">Treatments<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/Gallery/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101916478" target="" data-target-page-alias="" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/gallery" tabindex="0"> <span class="nav-item-text " data-link-text="Gallery" data-auto="page-text-style">Gallery<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/Testimonials/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101653794" target="" data-target-page-alias="" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/testimonials" tabindex="0"> <span class="nav-item-text " data-link-text="Testimonials" data-auto="page-text-style">Testimonials<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/ContactUs/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101259647" target="" data-target-page-alias="" raw_url="/" tabindex="0"> <span class="nav-item-text " data-link-text="Contact Us" data-auto="page-text-style">Contact Us<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																		</ul> 
+																	</nav>
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
-
-
 											<div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true">
 											</div>
 											<div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow ">
@@ -3151,6 +3431,396 @@
 														<div dm:templateorder="170"
 															class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl dmRespRowsWrapperSize1"
 															id="1716942098">
+															<div class="u_1795332710 dmRespRow"
+																style="text-align: center;" id="1795332710">
+																<div class="dmRespColsWrapper" id="1169468555">
+																	<div class="dmRespCol small-12 medium-12 large-12 u_1346781611"
+																		id="1346781611">
+																		<div class="u_1834421714 dmNewParagraph"
+																			data-element-type="paragraph"
+																			id="1834421714"
+																			style="transition: none 0s ease 0s; display: block;">
+																			<br>
+																			<div><span
+																					style="color: rgb(255, 255, 255); font-size: 72px; font-weight: 700;"><br></span>
+																			</div>
+																			<div><span
+																					style="color: rgb(255, 255, 255); font-weight: 700;"
+																					class="lh-1 font-size-22"><br></span>
+																				<div>
+																					<font color="#ffffff"><b style=""
+																							class="lh-1 font-size-26">HIGH
+																							QUALITY END RESULT EMBRACED
+																							WITH A PERSONAL TOUCH.</b>
+																					</font>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="u_1933069337 dmRespRow dmTopContentRow"
+																id="1933069337">
+																<div class="dmRespColsWrapper" id="1920408380">
+																	<div class="u_1519547454 small-12 dmRespCol dmAboutTopFirstSection medium-12 large-12"
+																		id="1519547454" data-anim-desktop="fadeInLeft"
+																		style="opacity: 1; transform: translate3d(0%, 0%, 0px); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;">
+																		<h4 class="u_1109904360 dmNewParagraph"
+																			data-element-type="paragraph"
+																			id="1109904360"
+																			style="transition: opacity 1s ease-in-out 0s;">
+																			<div style="text-align: center;"><span
+																					style="font-family: &#39;Great Vibes&#39;; font-weight: normal;"
+																					class="lh-1  font-size-60 m-specific m-font-size-48">
+																					<p>
+																						About Us</p>
+																				</span></div>
+																		</h4>
+																		<div class="u_1646917820 dmDividerWrapper clearfix"
+																			id="1646917820"
+																			data-element-type="dDividerId"
+																			layout="divider-style-1"
+																			data-widget-version="2">
+																			<hr class="u_1189711301 dmDivider defaultDivider"
+																				id="1189711301">
+																		</div>
+																		<div class="u_1790260412 dmNewParagraph"
+																			id="1790260412">DrMinx medical spa is a
+																			cosmetic institute that offers services from
+																			basic cosmetic requirements to a more
+																			advanced and minimal invasive aesthetic
+																			procedures.&nbsp;<span
+																				style="background-color: transparent;">The
+																				medical spa boosts a state of the art
+																				facility with cutting edge aesthetic
+																				procedures and equipment, it is one of
+																				the few medical institutes that houses a
+																				hyperbaric chamber.&nbsp;</span>
+																			<div><span
+																					style="background-color: transparent;"><br></span>
+																			</div>
+																			<div><span
+																					style="background-color: transparent;">The
+																					institute offers a professional
+																					service that is at the the forefront
+																					of aesthetic medicine this ensures
+																					that the patients are guaranteed to
+																					receive a high quality end result
+																					embraced with a personal
+																					touch.&nbsp; DRMinx medical spa's
+																					core principles are centered around
+																					offering our patients a memorable
+																					experience whilst maintaining the
+																					highest code of medical
+																					ethics.</span></div>
+																		</div> 
+																		<a data-display-type="block" 
+																			class="u_1067040187 align-center dmButtonLink dmWwr default dmOnlyButton dmDefaultGradient align-center gold-button"
+																			file="false"
+																			href="/treatments.html"
+																			id="1067040187"
+																			data-element-type="dButtonLinkId"
+																			
+																			raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/services">
+																			<span class="iconBg" id="1124777003"> <span
+																					class="icon hasFontIcon icon-star"
+																					id="1348622053"></span>
+																			</span>
+																			<span class="text" style="color: #8c8c8c;"
+																				id="1817438626">Treatments
+																			</span>
+																		</a>
+																	</div>
+																</div>
+															</div>
+															<div class="u_1539076452 dmRespRow fullBleedChanged fullBleedMode"
+																style="text-align: center;" id="1539076452">
+																<div class="dmRespColsWrapper" id="1141731222">
+																	<div class="u_1335869433 dmRespCol small-12 medium-12 large-12"
+																		id="1335869433" data-anim-desktop="fadeInRight"
+																		style="opacity: 1; transform: translate3d(0%, 0%, 0px); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;">
+																		<div style="text-align: center;">
+																			<span
+																				style="font-family: &#39;Great Vibes&#39;; font-weight: normal;"
+																				class="lh-1  font-size-60 m-specific m-font-size-48">
+																				<p>TREATMENTS</p>
+																			</span>
+																		</div>
+																		<div class="u_1165991822 dmDividerWrapper clearfix"
+																			id="1165991822"
+																			data-element-type="dDividerId"
+																			layout="divider-style-1"
+																			data-widget-version="2">
+																			<hr class="u_1313359453 dmDivider defaultDivider"
+																				id="1313359453">
+																		</div>
+																		<div class="u_1203838755 dmNewParagraph"
+																			data-element-type="paragraph"
+																			id="1203838755"
+																			style="text-align: center; transition: opacity 1s ease-in-out 0s;">
+																			We offer services from basic cosmetic
+																			requirements to a more advanced and minimal
+																			invasive aesthetic procedures.&nbsp;</div>
+																		<div class="u_1159205727 dmPhotoGallery dmPhotoGalleryResp newPhotoGallery hasFullWidth text-layout-fixed captionAlignment-bottom_center photo-gallery-done"
+																			id="1159205727" data-link-gallery="true"
+																			data-caption-padding="15px"
+																			data-image-hover-effect="reverse-grayscale"
+																			data-image-animation="fadeInRight"
+																			data-anim-desktop="fadeIn"
+																			data-desktop-layout="vertical"
+																			data-desktop-columns="4"
+																			data-mobile-columns="1"
+																			data-rows-to-show="100"
+																			data-desktop-text-layout="fixed"
+																			data-tablet-layout="square"
+																			data-mobile-layout="square"
+																			data-element-type="dPhotoGalleryId"
+																			data-placeholder="false"
+																			data-desktop-caption-alignment="bottom_center"
+																			data-tablet-text-layout="fixed"
+																			data-tablet-caption-alignment="bottom_center"
+																			data-mobile-text-layout="fixed"
+																			data-mobile-caption-alignment="bottom_center"
+																			editablewidget="true"
+																			data-widget-type="photoGallery"
+																			style="opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;">
+																			<ul class="u_1110272448 dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow photogalleryPaddingThumbnails"
+																				id="1110272448">
+
+																			</ul>
+																			<div class="layout-container vertical">
+																				<div class="photogallery-row"
+																					data-index="0">
+																					<div class="photogallery-column  column-4"
+																						data-index="0">
+																						<li class="photoGalleryThumbs vertical-height animated fadeInRight"
+																							id="1907042745"
+																							data-index="0"
+																							style="animation-delay: 100ms;">
+																							<div class="thumbnailInnerWrapper"
+																								style="opacity: 1;">
+																								<div class="image-container revealed"
+																									id="1763570119"> <a
+																										data-dm-multisize-attr="href"
+																										data-image-url="https://irp-cdn.multiscreensite.com/1d469015/dms3rep/multi/face-1146038_1920.jpg"
+																										id="1987827471"
+																										style="background-image: url(&quot;https://lirp.cdn-website.com/1d469015/dms3rep/multi/opt/face-1146038_1920-1000h.jpg&quot;);"><img
+																											irh=""
+																											irw=""
+																											data-src="https://lirp.cdn-website.com/1d469015/dms3rep/multi/opt/face-1146038_1920-1920w.jpg"
+																											id="1478782465"
+																											onerror="handleImageLoadError(this)"></a>
+																								</div>
+																								<div class="caption-container u_1819718108"
+																									style="display:none"
+																									id="1819718108">
+																									<span
+																										class="caption-inner"
+																										id="1776521156">
+																										<h3 class="caption-title u_1671749015"
+																											id="1671749015">
+																											FACE</h3>
+																										<div class="caption-text u_1167314609"
+																											id="1167314609">
+																										</div>
+																										<div class="dmRespCol small-12 medium-6 large-6 has-one-widget-only" id="1165930468">
+																										<a class="u_1630937705 align-center gold-button dmButtonLink dmWwr default dmOnlyButton dmDefaultGradient " 
+																											id="1630937705"
+																											href="/treatments.html"
+																											file="false" 
+																											link-modified="true"
+																											raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/services"
+																											style="">
+																											<span style="color: #8c8c8c;"
+																												class="text"
+																												id="1011350165">Learn
+																												More</span>
+																										</a>
+																									</div>
+																									</span>
+																								</div>
+																							</div>
+
+																						</li>
+																					</div>
+																					<div class="photogallery-column  column-4"
+																						data-index="1">
+																						<li class="photoGalleryThumbs vertical-height animated fadeInRight"
+																							id="1787254904"
+																							data-index="1"
+																							style="animation-delay: 200ms;">
+																							<div class="thumbnailInnerWrapper"
+																								style="opacity: 1;">
+																								<div class="image-container revealed"
+																									id="1021123138"> <a
+																										data-dm-multisize-attr="href"
+																										data-image-url="https://irp-cdn.multiscreensite.com/1d469015/dms3rep/multi/full+body.jpg"
+																										id="1038714338"
+																										class="u_1038714338"
+																										style="background-image: url(&quot;https://lirp.cdn-website.com/1d469015/dms3rep/multi/opt/full+body-1000h.jpg&quot;);"><img
+																											irh=""
+																											irw=""
+																											data-src="https://lirp.cdn-website.com/1d469015/dms3rep/multi/opt/full+body-1920w.jpg"
+																											id="1256238520"
+																											class=""
+																											onerror="handleImageLoadError(this)"></a>
+																								</div>
+																								<div class="caption-container u_1634959208"
+																									style="display:none"
+																									id="1634959208">
+																									<span
+																										class="caption-inner"
+																										id="1970376997">
+																										<h3 class="caption-title u_1004547029"
+																											id="1004547029">
+																											BODY</h3>
+																										<div class="caption-text u_1843436889"
+																											id="1843436889">
+																										</div>
+																										<div class="dmRespCol small-12 medium-6 large-6 has-one-widget-only" id="1165930468">
+																										<a class="u_1959139360 align-center gold-button dmButtonLink dmWwr default dmOnlyButton dmDefaultGradient"
+																											id="1959139360"
+																											href="/treatments.html"
+																											file="false"
+																											link-modified="true"
+																											raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/services"
+																											style="">
+																											<span
+																												class="text" style="color: #8c8c8c;"
+																												id="1948773416">Learn
+																												More</span>
+																										</a>
+																									</div>
+																									</span>
+																								</div>
+																							</div>
+
+																						</li>
+																					</div>
+																					<div class="photogallery-column  column-4"
+																						data-index="2">
+																						<li class="photoGalleryThumbs vertical-height animated fadeInRight"
+																							id="1560818242"
+																							data-index="2"
+																							style="animation-delay: 300ms;">
+																							<div class="thumbnailInnerWrapper"
+																								style="opacity: 1;">
+																								<div class="image-container revealed"
+																									id="1538370740"> <a
+																										data-dm-multisize-attr="href"
+																										data-image-url="https://irp-cdn.multiscreensite.com/1d469015/dms3rep/multi/medical+drip.jpg"
+																										id="1243703543"
+																										class="u_1243703543"
+																										style="background-image: url(&quot;https://lirp.cdn-website.com/1d469015/dms3rep/multi/opt/medical+drip-1000h.jpg&quot;);"><img
+																											irh=""
+																											irw=""
+																											data-src="https://lirp.cdn-website.com/1d469015/dms3rep/multi/opt/medical+drip-1920w.jpg"
+																											id="1770568922"
+																											class=""
+																											onerror="handleImageLoadError(this)"></a>
+																								</div>
+																								<div class="caption-container u_1195304527"
+																									style="display:none"
+																									id="1195304527">
+																									<span
+																										class="caption-inner"
+																										id="1240959980">
+																										<h3 class="caption-title u_1329723792"
+																											id="1329723792">
+																											FUNCTIONAL
+																											MEDICINE
+																										</h3>
+																										<div class="caption-text u_1935350142"
+																											id="1935350142">
+																										</div>
+																										<div class="dmRespCol small-12 medium-6 large-6 has-one-widget-only" id="1165930468">
+																										<a class="u_1756586440 align-center gold-button dmButtonLink  dmWwr default dmOnlyButton dmDefaultGradient"
+																											id="1756586440"
+																											href="/treatments.html"
+																											file="false"
+																											link-modified="true"
+																											raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/services"
+																											style="">
+																											<span
+																												class="text" style="color: #8c8c8c;"
+																												id="1891441262">Learn
+																												More</span>
+																										</a>
+																									</div>
+																									</span>
+																								</div>
+																							</div>
+
+																						</li>
+																					</div>
+																					<div class="photogallery-column  column-4"
+																						data-index="3">
+																						<li class="photoGalleryThumbs vertical-height animated fadeInRight"
+																							id="1193855557"
+																							data-index="3"
+																							style="animation-delay: 400ms;">
+																							<div class="thumbnailInnerWrapper"
+																								style="opacity: 1;">
+																								<div class="image-container revealed"
+																									id="1493359778"> <a
+																										data-dm-multisize-attr="href"
+																										data-image-url="https://irp-cdn.multiscreensite.com/1d469015/dms3rep/multi/spa+and+treatments.jpg"
+																										id="1127182320"
+																										class="u_1127182320"
+																										style="background-image: url(&quot;https://lirp.cdn-website.com/1d469015/dms3rep/multi/opt/spa+and+treatments-1000h.jpg&quot;);"><img
+																											irh=""
+																											irw=""
+																											data-src="https://lirp.cdn-website.com/1d469015/dms3rep/multi/opt/spa+and+treatments-1920w.jpg"
+																											id="1047954626"
+																											class=""
+																											onerror="handleImageLoadError(this)"></a>
+																								</div>
+																								<div class="caption-container u_1502221967"
+																									style="display:none"
+																									id="1502221967">
+																									<span
+																										class="caption-inner"
+																										id="1535206975">
+																										<h3 class="caption-title u_1764927827"
+																											id="1764927827">
+																											SPA</h3>
+																										<div class="caption-text u_1663556479"
+																											id="1663556479">
+																										</div>
+																										<div class="dmRespCol small-12 medium-6 large-6 has-one-widget-only" id="1165930468">
+																										<a class="u_1214491732 align-center gold-button dmButtonLink  dmWwr default dmOnlyButton dmDefaultGradient"
+																											id="1214491732"
+																											href="/treatments.html"
+																											file="false"
+																											link-modified="true"
+																											raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/services"
+																											style="">
+																											<span
+																												class="text" style="color: #8c8c8c;"
+																												id="1918653204">Learn
+																												More</span>
+																										</a>
+																									</div>
+																									</span>
+																								</div>
+																							</div>
+
+																						</li>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="photoGalleryViewAll link"
+																				isall="true" data-viewall="View more"
+																				data-viewless="View less"
+																				style="display:none;" id="1744646847">
+																			</div>
+
+
+																		</div>
+																		
+																	</div>
+																</div>
+															</div>
 															<div class="u_1798539550 dmRespRow dmSectionParallaxNew hasBackgroundOverlay skrollable skrollable-before"
 																style="text-align: center; background-position: 50% 100px; visibility: visible !important;"
 																id="1798539550" data-anim-desktop="none"
@@ -3165,24 +3835,12 @@
 																			data-element-type="paragraph"
 																			data-anim-desktop="fadeInUp"
 																			style="opacity: 1; transform: translate3d(0%, 0%, 0px); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;">
-																			<div style="text-align: center;">
-																				<span
+																			<div style="text-align: center;"><span
 																					style="font-weight: 400; font-family: Muli;">
 																					<font
 																						style="color: rgb(255, 255, 255);">
-																						<p class="rteBlock"
-																							style="font-size: larger; color: rgb(245, 194, 67);">
-																							Thank you for contacting us.
-																						</p>
-																						<p class="rteBlock"
-																							style="font-size: larger; color: rgb(245, 194, 67);">
-																							We will get back to you as
-																							soon as possible.</p>
-																						<br><br>
-																						CLINIC INFO
-																					</font>
-																				</span>
-																			</div>
+																						CLINIC INFO</font>
+																				</span></div>
 																		</h3>
 																		<div class="u_1140475306 dmDividerWrapper clearfix"
 																			id="1140475306"
@@ -3213,14 +3871,14 @@
 																			<dl class="open-hours-data">
 																				<div class="open-hours-item">
 																					<dt day="0">Mon - Fri</dt>
-																					<dd> <time>7:30 am</time>
-																						- <time>4:30 pm</time>
+																					<dd> <time>7:00 am</time>
+																						- <time>6:00 pm</time>
 																					</dd>
 																				</div>
 																				<div class="open-hours-item">
 																					<dt day="5">Saturday</dt>
-																					<dd> <time>7:30 am</time>
-																						- <time>4:30 pm</time>
+																					<dd> <time>7:00 am</time>
+																						- <time>1:00 pm</time>
 																					</dd>
 																				</div>
 																				<div class="open-hours-item">
@@ -3232,8 +3890,7 @@
 																		<div class="dmNewParagraph u_1328323510"
 																			id="1328323510" style="display: block;">
 																			<font style="color: rgb(255, 255, 255);">
-																				249 Basden Ave, Die Hoewes, Centurion,
-																				0163
+																				249 Basden Ave, Die Hoewes, Centurion, 0163
 																			</font>
 																			<div><span
 																					style="color: rgb(255, 255, 255);"><br></span>
@@ -3245,27 +3902,29 @@
 																				<div>
 																					<font
 																						style="color: rgb(255, 255, 255);">
-																						<br>
-																					</font>
+																						<br></font>
 																				</div>
 																				<div>
 																					<font color="#ffffff">012 111 8070
-																					</font> 
-																				</div>
-																				</br>
-																				<div style="width: 100%;" >
-																					<a class="u_1630937705 align-center gold-button dmButtonLink dmWwr default dmOnlyButton dmDefaultGradient "
-																						id="1630937705"
-																						href="/Styles/Home/d2925256e486a7e94ee64ce5e8efc929.html"
-																						file="false"
-																						link-modified="true"
-																						raw_url="./index.">
-																						<span style="color: #8c8c8c;"
-																							class="text"
-																							id="1011350165">Home</span>
-																					</a>
+																					</font>
 																				</div>
 																			</div>
+																		</div> <a data-display-type="block"
+																			class="u_1762909813 align-center dmButtonLink align-center gold-button shine-button dmWwr default dmOnlyButton dmDefaultGradient"
+																			file="false"
+																			href="/Styles/ContactUs/d2925256e486a7e94ee64ce5e8efc929.html"
+																			id="1762909813"
+																			data-element-type="dButtonLinkId"
+																			
+																			data-buttonstyle="THICK_BORDER_ROUND"
+																			raw_url="/">
+																			<span class="iconBg" id="1218700722"> <span
+																					class="icon hasFontIcon icon-star"
+																					id="1562872463"></span>
+																			</span>
+																			<span class="text" style="color: #8c8c8c;"
+																				id="1992950429">Contact</span>
+																		</a>
 																	</div>
 																</div>
 															</div>
@@ -3273,10 +3932,233 @@
 													</div>
 												</div>
 											</div>
-
-											<!-- Footer start -->
-
-											<!-- Footer end -->
+											<div class="dmFooterContainer">
+												<div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer">
+													<div dm:templateorder="250" class="dmFooterResp generalFooter"
+														id="1943048428">
+														<div class="u_1808426036 dmRespRow fullBleedChanged fullBleedMode dmSectionNoParallax"
+															style="text-align: center;" id="1808426036"
+															data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9saXJwLmNkbi13ZWJzaXRlLmNvbS9tZC91bnNwbGFzaC9kbXMzcmVwL211bHRpL29wdC9waG90by0xNDkzNjA2Mjc4NTE5LTExYWE5Zjg2ZTQwYS0xOTIwdy5qcGciXX0=">
+															<div class="dmRespColsWrapper" id="1467682938">
+																<div class="u_1960164650 dmRespCol small-12 large-3 medium-3"
+																	id="1960164650">
+																	<nav class="u_1596385167 unifiednav_vertical effect-text-color main-navigation unifiednav dmLinksMenu"
+																		role="navigation"
+																		layout-main="vertical_nav_layout_4"
+																		layout-sub=""
+																		data-show-vertical-sub-items="HOVER"
+																		id="1596385167" dmle_extension="onelinksmenu"
+																		data-element-type="onelinksmenu"
+																		data-logo-src="https://irp-cdn.multiscreensite.com/7adbba5638fd4aae92f67167ba76c34b/dms3rep/multi/desktop/logo-02.svg"
+																		alt="" data-nav-structure="VERTICAL" wr="true"
+																		icon="true" surround="true" adwords=""
+																		navigation-id="unifiedNav" data-from-nav="true"
+																		data-sub-nav="true" data-items="-1"
+																		custom-li-class="" custom-ul-class=""
+																		custom-a-class="" custom-inner-ul-class=""
+																		custom-nested-inner-ul-class=""
+																		custom-span-class="" data-links-level="0"
+																		is-build-your-own="false"
+																		data-build-your-own="W10=">
+																		<ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/Home/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_00 currentPage dmNavItemSelected" target="" data-target-page-alias="" data-auto="selected-page" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/" tabindex="0"><span class="nav-item-text " data-link-text="Home" data-auto="page-text-style">Home<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			 <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/About/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101661768" target="" data-target-page-alias="" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/about" tabindex="0"><span class="nav-item-text " data-link-text="About Us" data-auto="page-text-style">About Us<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/Treatments/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101628177" target="" data-target-page-alias="" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/services" tabindex="0"> <span class="nav-item-text " data-link-text="Treatments" data-auto="page-text-style">Treatments<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/Gallery/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101916478" target="" data-target-page-alias="" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/gallery" tabindex="0"> <span class="nav-item-text " data-link-text="Gallery" data-auto="page-text-style">Gallery<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/Testimonials/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101653794" target="" data-target-page-alias="" raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/testimonials" tabindex="0"> <span class="nav-item-text " data-link-text="Testimonials" data-auto="page-text-style">Testimonials<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																			<li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> 
+																				<a href="/Styles/ContactUs/d2925256e486a7e94ee64ce5e8efc929.html" class="unifiednav__item dmUDNavigationItem_010101259647" target="" data-target-page-alias="" raw_url="/" tabindex="0"> <span class="nav-item-text " data-link-text="Contact Us" data-auto="page-text-style">Contact Us<span class="icon icon-angle-down"></span></span></a> 
+																			</li> 
+																		</ul> 
+																	</nav>
+																</div>
+																<div class="u_1293379515 dmRespCol small-12 large-6 medium-6"
+																	id="1293379515">
+																	<h3 class="u_1578143831 dmNewParagraph 
+																		data-element-type="paragraph" id="1578143831"
+																		style="transition: none; display: block;">
+																		<font style="color: goldenrod;"
+																			class="lh-1 font-size-32 ">Be the first to
+																			know</font>
+																	</h3>
+																	<h6 class="u_1254857923 dmNewParagraph"
+																		data-element-type="paragraph" id="1254857923"
+																		style="text-align: center; transition: none 0s ease 0s;">
+																		<font color="#7b7b7b"><span
+																				style="font-weight: 400;"
+																				class="lh-1 font-size-18">Join our
+																				newsletter today!</span></font>
+																	</h6>
+																	<div class="u_1687203688 dmform default native-inputs"
+																		data-element-type="dContactUsRespId"
+																		id="1687203688" data-layout="layout-1">
+																		<h3 class="dmform-title dmwidget-title"
+																			id="1375529215" hide="true">Contact Us</h3>
+																		<div class="dmform-wrapper" id="1415290356"
+																			captcha-lang="en">
+																			<form method="post" class="dmRespDesignRow"
+																				locale="ENGLISH" id="1433660154"
+																				action="/index.html">
+																				<div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12"
+																					id="1340342606"> <label
+																						for="dmform-1" id="1644930165"
+																						class=""
+																						hide="true">Email:</label>
+																					<input type="email" class=""
+																						name="dmform-1" id="1375689798"
+																						placeholder="Your Email"
+																						data-placeholder-original="Your Email"><input
+																						type="hidden"
+																						name="label-dmform-1"
+																						value="Email" id="1732356831">
+																				</div>
+																				<span id="1110203495"
+																					class="dmWidgetClear"></span>
+																				<span id="1701199694"
+																					class="dmWidgetClear"></span>
+																				<div class="dmformsubmit "
+																					id="1071801579">
+																					<input class="u_1036631749 align-center gold-button shine-button dmButtonLink dmWwr default dmOnlyButton dmDefaultGradient"
+																						name="submit" type="submit" style="color: #8c8c8c;"
+																						value="Subscribe"
+																						id="1036631749">
+																				</div>
+																				<input name="dmformsendto" type="hidden"
+																					value="O0wrseIfFLt9qHN5bbtL5Q1Q9VO0DLiR52b4E15n2K5yxirF0mUSFFzC7FGRhgQA"
+																					id="1546599790" class=""
+																					data-dec="true">
+																					<input
+																					class="dmActionInput " type="hidden"
+																					name="action"
+																					value="/_dm/s/rt/widgets/dmform.submit.jsp"
+																					id="1140370625"><input
+																					name="dmformsubject" type="hidden"
+																					value="Newsletter Sign Up"
+																					id="1018041781" class="">
+																					<input
+																					name="dmformsubmitparams"
+																					type="hidden"
+																					value="8mpKnCSiNQXK/d9M7IDrS+H8ZYkBksDhs9E9AvyLsS/bJ3VL0BNxva8/dPwIlm9+QDRtDq/+BN0tXYbGKZdVhpynaBc5exCwCMkKGQ/axJHxmyHYVBsTHxkT4eRvyZoDGGss023mLlhzXbAPkJZfZ2NsBXtRt+SVYf3VJ/5I4kcUQB4NZ9CmL8q5m3UJLI8iCJkg43TwCaSdyRQFYoYhbA=="
+																					data-dec="true"><input type="hidden"
+																					name="page_uuid"
+																					value="5e50b8ca133642df9cbdf1ade44e1ce7">
+																			</form>
+																		</div>
+																		<div class="dmform-success" style="display:none"
+																			id="1243565765">Thank you for contacting
+																			us.<br id="1452645446">We will get back to
+																			you as soon as possible</div>
+																		<div class="dmform-error" style="display:none"
+																			id="1326902437">Oops, there was an error
+																			sending your message.<br
+																				id="1009652378">Please try again later
+																		</div>
+																	</div>
+																	<h5 class="u_1880506503 dmNewParagraph hide-for-small"
+																		data-element-type="paragraph" id="1880506503"
+																		style="transition: none;">
+																		<font style="color: rgb(123, 123, 123);"><span
+																				style="font-weight: 300;"
+																				class="lh-1 font-size-12">© DR MINX
+																				MEDICAL SPA&nbsp; &nbsp;|&nbsp; ALL
+																				RIGHTS RESERVED | <a
+																					href="/privacy.html"
+																					runtime_url="/privacy"
+																					raw_url="/site/d2925256e486a7e94ee64ce5e8efc929/privacy">PRIVACY
+																					POLICY</a></span></font>
+																	</h5>
+																</div>
+																<div class="u_1741562286 dmRespCol small-12 large-3 medium-3"
+																	id="1741562286">
+																	<div class="u_1208051198 dmNewParagraph"
+																		data-element-type="paragraph" id="1208051198"
+																		style="transition: opacity 1s ease-in-out 0s;"
+																		data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLjE0MzQxMDM5MTcifV0="
+																		data-diy-text="">012 111 8070</div>
+																	<div class="dmNewParagraph"
+																		data-element-type="paragraph" id="1597268952"
+																		style="transition: opacity 1s ease-in-out 0s;"
+																		data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLmVtYWlsLjQxMjg0NDA3In1d"
+																		data-diy-text="">hello@drminx.com</div>
+																	<div class="u_1223055028 align-center text-align-center dmSocialHub gapSpacing"
+																		id="1223055028" dmle_extension="social_hub"
+																		data-element-type="social_hub" wr="true"
+																		networks="" icon="true" surround="true"
+																		adwords=""
+																		data-editor="eyJ0aXRsZSI6IiIsImRpc3BsYXlUaXRsZSI6dHJ1ZSwiZm9yY2VEaXNwbGF5IjpmYWxzZSwibGF5b3V0IjoiIiwibmV0d29ya3MiOlt7InVybCI6Im1haWx0bzpoZWxsb0Bkcm1pbnguY29tIiwib3JkZXIiOjAsImN1c3RvbSI6ZmFsc2UsImlkIjoiZW1haWwiLCJpY29uX2NsYXNzIjoiIiwiaWNvbl9jdXN0b20iOiIiLCJkYXRhVmFsdWUiOm51bGx9LHsidXJsIjoiaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0RyTWlueE1lZGljYWxzcGEvIiwib3JkZXIiOjEsImN1c3RvbSI6ZmFsc2UsImlkIjoiZmFjZWJvb2siLCJpY29uX2NsYXNzIjoiIiwiaWNvbl9jdXN0b20iOiIiLCJkYXRhVmFsdWUiOm51bGx9LHsidXJsIjoiaHR0cHM6Ly90d2l0dGVyLmNvbS9Eck1pbngiLCJvcmRlciI6MiwiY3VzdG9tIjpmYWxzZSwiaWQiOiJ0d2l0dGVyIiwiaWNvbl9jbGFzcyI6IiIsImljb25fY3VzdG9tIjoiIiwiZGF0YVZhbHVlIjpudWxsfSx7InVybCI6Imh0dHBzOi8vaW5zdGFncmFtLmNvbS9kcm1pbnhfbWVkaWNhbHNwYT91dG1fc291cmNlPWlnX3Byb2ZpbGVfc2hhcmUmaWdzaGlkPTE0ODRkYnB1ZjY1dHMiLCJvcmRlciI6MywiY3VzdG9tIjpmYWxzZSwiaWQiOiJpbnN0YWdyYW0iLCJpY29uX2NsYXNzIjoiIiwiaWNvbl9jdXN0b20iOiIiLCJkYXRhVmFsdWUiOm51bGx9XSwiaWNvbnNfc3R5bGUiOiI1IiwiYWxsX3BhZ2VzIjpmYWxzZX0=">
+																		<div class="socialHubWrapper">
+																			<div class="socialHubInnerDiv "> <a
+																					href="mailto:hello@drminx.com"
+																					dm_dont_rewrite_url="true"
+																					aria-label="email"
+																					onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Email&#39;)"
+																					target="_blank"> <span
+																						class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style5"
+																						aria-hidden="true"
+																						data-hover-effect=""></span>
+																				</a>
+																				<a href="https://www.facebook.com/DrMinxMedicalspa/"
+																					target="_blank"
+																					dm_dont_rewrite_url="true"
+																					aria-label="facebook"
+																					onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Facebook&#39;)">
+																					<span
+																						class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5"
+																						aria-hidden="true"
+																						data-hover-effect=""></span>
+																				</a>
+																				<a href="https://twitter.com/DrMinx"
+																					target="_blank"
+																					dm_dont_rewrite_url="true"
+																					aria-label="twitter"
+																					onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Twitter&#39;)">
+																					<span
+																						class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style5"
+																						aria-hidden="true"
+																						data-hover-effect=""></span>
+																				</a>
+																				<a href="https://instagram.com/drminx_medicalspa?utm_source=ig_profile_share&amp;igshid=1484dbpuf65ts"
+																					target="_blank"
+																					dm_dont_rewrite_url="true"
+																					aria-label="instagram"
+																					onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Instagram&#39;)">
+																					<span
+																						class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5"
+																						aria-hidden="true"
+																						data-hover-effect=""></span>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																	<h5 class="u_1006151648 dmNewParagraph hide-for-large hide-for-medium"
+																		data-element-type="paragraph" id="1006151648"
+																		style="transition: none;">
+																		<font style="color: rgb(123, 123, 123);"><span
+																				style="font-weight: 300;"
+																				class="lh-1 font-size-12">© DR MINX
+																				MEDICAL SPA&nbsp; &nbsp;|&nbsp; ALL
+																				RIGHTS RESERVED | PRIVACY POLICY</span>
+																		</font>
+																	</h5>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div id="1236746004" dmle_extension="powered_by"
+														data-element-type="powered_by" icon="true" surround="false">
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -3488,6 +4370,14 @@
 	<div style="display:none;" id="P6iryBW0Wu"></div>
 
 	<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
 
 	<!-- Root element of PhotoSwipe. Must have class pswp. -->
 	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
