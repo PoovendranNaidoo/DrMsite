@@ -5347,18 +5347,23 @@
 																							style="background: transparent;"
 																							locale="ENGLISH"
 																							id="1398758978"
-																							action="https://api.web3forms.com/submit">
+																							action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfxDo6dfJoHEG0AG02OPWiKmt1mWvGMcQFa1KIs1_WjXyunGw/formResponse">
 																							<input type="hidden"
 																								name="access_key"
 																								value="d03002c3-c233-4724-9101-e042435191b9">
+
+																							<!-- TypeOfRequest -->
 																							<input type="hidden"
-																								name="TypeOfRequest"
+																								name="entry.616700230"
 																								value="Website Customer Lead - Contact Customer and Add to Whatsapp">
+																								
 																							<!-- <input type="hidden" name="redirect" value="http://127.0.0.1:3000/ContactSuccessEmail.html"> -->
+																							<!-- Redirect URL -->
 																							<input type="hidden"
 																								name="redirect"
 																								value="https://www.drminx.com/ContactSuccessEmail.html">
 																							<!-- dont forget to change -->
+
 																							<div class="required small-12 dmRespDesignCol medium-5 large-5 medium-6 large-6 medium-7 large-7 medium-10 large-10 medium-12 large-12 color: rgb(0, 0, 0); font-size: larger; -webkit-text-stroke: 0.5px goldenrod; "
 																								id="1821692806"
 																								style="text-align: left;">
@@ -5367,8 +5372,10 @@
 																									id="1933976372">
 																									<p>Name</p>
 																								</label>
+
+																								<!-- Name -->
 																								<input type="text"
-																									name="name"
+																									name="entry.333435610"
 																									style="border-color: #cb9b51;"
 																									id="1761201320"
 																									required>
@@ -5381,8 +5388,10 @@
 																									id="1542210126">
 																									<p>Phone</p>
 																								</label>
+
+																								<!-- Phone -->
 																								<input type="tel"
-																									name="phone"
+																									name="entry.1571377989"
 																									style="border-color: #cb9b51;"
 																									id="1967326343"
 																									required>
@@ -5395,8 +5404,10 @@
 																									id="1023119265">
 																									<p>Email</p>
 																								</label>
+
+																								<!-- Email -->
 																								<input type="email"
-																									name="email"
+																									name="entry.957274598"
 																									style="border-color: #cb9b51;"
 																									id="1101112938"
 																									pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
@@ -5410,9 +5421,11 @@
 																									id="1259649016">
 																									<p>Subject</p>
 																								</label>
+
+																								<!-- Subject -->
 																								<input type="text"
 																									style="border-color: #cb9b51;"
-																									name="subject"
+																									name="entry.474066066"
 																									id="1685782208"
 																									required>
 																							</div>
@@ -5425,7 +5438,9 @@
 																									<p>Message</p>
 																								</label>
 																								</label>
-																								<textarea name="message"
+
+																								<!-- Message -->
+																								<textarea name="entry.542857840"
 																									style="border-color: #cb9b51; "
 																									id="1506292446"
 																									required></textarea>
@@ -5841,16 +5856,6 @@
 			else { button.value = "Sending..."; }
 
 		}
-
-		document.addEventListener('DOMContentLoaded', function () {
-			var form = document.getElementById('1398758978');
-			var submitButton = document.getElementById('1764766576');
-
-			form.addEventListener('input', function () {
-				if (form.checkValidity()) { submitButton.value = "Click to Subscribe..."; }
-				else { submitButton.value = "Subscribe"; }
-			});
-		});
 	</script>
 
 	<!-- Show and toggle treatments-->
