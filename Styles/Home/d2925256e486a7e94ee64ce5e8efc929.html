@@ -4600,11 +4600,7 @@
 																				<!-- TypeOfRequest -->
 																				<input type="hidden"
 																					name="entry.616700230"
-																					value="Website Customer Lead - Add to Whatsapp ONLY">
-
-																				<!-- Name -->
-																				<input type="hidden" name="entry.333435610"
-																					value="WhatsApp Contact">
+																					value="Website Customer Lead - Add to Whatsapp ONLY">							
 
 																				<!-- Email -->	
 																				<input type="hidden" name="entry.957274598"
@@ -4622,13 +4618,17 @@
 																					style="font-size: larger; color: #000000;"
 																					id="1340342606">
 
+																					<!-- Name -->
+																					<input type="text" style="font-size: larger; color: #000000;" 
+																						name="entry.333435610" required id="1375689799" placeholder="Name"
+																						data-placeholder-original="Name">																					
+
 																					<!-- Phone -->
 																					<input type="tel" name="entry.1571377989"
-																						required
-																						style="font-size: larger; color: #000000; "
-																						id="1375689798"
-																						placeholder="Your Phone No."
+																						required style="font-size: larger; color: #000000; "
+																						id="1375689798" placeholder="Your Phone No."
 																						data-placeholder-original="Your Phone no.">
+
 																				</div>
 
 																				<span id="1110203495"
@@ -4973,9 +4973,10 @@
 	<script>
 		function checkWhatsappInput() {
 			var input = document.getElementById('1375689798').value;
+			var input2 = document.getElementById('1375689799').value;
 			var button = document.getElementById('1036631749');
 
-			if (input === "") { button.value = "Subscribe"; }
+			if (input === "" || input2 === "") { button.value = "Subscribe"; }
 			else { button.value = "Sending..."; }
 		}
 	</script>
