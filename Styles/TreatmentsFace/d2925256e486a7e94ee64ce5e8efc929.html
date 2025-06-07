@@ -48,15 +48,15 @@
 
 		/* The Close Button */
 		.close {
-			color: goldenrod;
-			float: right;
-			font-size: 56px;
+			color: #777676;
+			float: none;
+			font-size: 36px;
 			font-weight: bold;
 		}
 
 		.close:hover,
 		.close:focus {
-			color: #000;
+			color: #2f373a;
 			text-decoration: none;
 			cursor: pointer;
 		}
@@ -591,8 +591,6 @@
 			background-repeat: no-repeat !important;
 			background-image: url('https://lirp.cdn-website.com/md/unsplash/dms3rep/multi/opt/photo-1551185887-26a932b61669-2880w.jpg') !important;
 		}
-
-
 
 		*#dm *.dmBody div.u_1869744900 {
 			float: none !important;
@@ -3903,7 +3901,7 @@
 																	<font
 																		style="color: #8c8c8c; font-size:x-large; -webkit-text-stroke: 0.5px rgb(0, 0, 0);"
 																		class="gold-button ">
-																		Click Picture to find out more...</br>
+																		Click on a Picture to find out more...</br>
 																	</font>
 																</span>
 																<div class="layout-container">
@@ -4203,7 +4201,8 @@
 																					src="./Botox.JPG" id="1478782465">
 																			</a>
 																		</div>
-																		<div style="width: 33.33%;"></div>
+																		<div style="width: 33.33%;">
+																		</div>
 																	</div>
 																	<div class="dmRespColsWrapper" style="opacity: 1;">
 																		<div style="width: 30%;"></div>
@@ -4216,6 +4215,7 @@
 																	<div class="dmRespColsWrapper" style="opacity: 1;">
 																	</div>
 																	<!-- Botox Insta End-->
+																	 
 
 																	<div class="dmRespColsWrapper" id="1920408380">
 
@@ -6310,14 +6310,31 @@
 
 	<!-- The Modal Pop up start-->
 	<div id="myModal" class="modal" >
-		<!-- Modal content -->
 		<div class="modal-content" style="display: flex; justify-content: center;"   >
-			<iframe src="" id="iframe1" frameborder="0" scrolling="yes" height="600px" 
-				allowtransparency="true" >
-			</iframe> &nbsp;&nbsp;
-			<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-			<span class="close" >&times;</span>
-			<font style="color: #F4F4F4;">Click picture<br> to play</font>
+			<table>
+				<tr style="align-items: center; align-content: center; text-align: center;" >
+					<td style="align-items: center; align-content: center;">
+						<a class=" dmDefaultGradient align-center gold-button shine-button dmCall dmNoMark dmWwr" >
+							<font style="color: #777676; font-size: 36px;">Click picture to play</font>
+						</a>
+					</td>
+				</tr>
+				<tr style="align-items: center; align-content: center; text-align: center;">
+					<td>
+						<iframe src="" id="iframe1" frameborder="0" scrolling="yes" height="600px" 
+							allowtransparency="true" >
+						</iframe> &nbsp;&nbsp;
+						<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+					</td>
+				</tr>
+				<tr style="align-items: center; align-content: center; text-align: center;">
+					<td style="align-items: center;" >
+						<a class="close dmDefaultGradient align-center gold-button dmCall dmNoMark dmWwr" >
+							<span class="close" >&nbsp;&nbsp;Close&nbsp;&nbsp;</span>
+						</a>
+					</td>
+				</tr>
+			</table>
 		</div>
 	</div>
 	<!-- The Modal Pop up End-->
@@ -6332,7 +6349,7 @@
 		var PicModalBotox = document.getElementById("1987827473");
 		PicModalBotox.onclick = function () {
 			modal.style.display = "block";
-			document.getElementById('iframe1').src = "https://www.instagram.com/p/DFKawIPOYHD/embed";
+			document.getElementById('iframe1').src = "https://www.instagram.com/reel/DFKawIPOYHD/embed";
 		}
 
 		// Pigmentation

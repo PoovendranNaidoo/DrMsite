@@ -48,15 +48,15 @@
 
 		/* The Close Button */
 		.close {
-			color: goldenrod;
-			float: right;
-			font-size: 56px;
+			color: #777676;
+			float: none;
+			font-size: 36px;
 			font-weight: bold;
 		}
 
 		.close:hover,
 		.close:focus {
-			color: #000;
+			color: #2f373a;
 			text-decoration: none;
 			cursor: pointer;
 		}
@@ -3771,14 +3771,14 @@
 																	</div>
 																</div>
 																&nbsp;
-																<div class="dmRespColsWrapper"
-																						style="opacity: 1; ">
-																						<br></br>
-																						<button 
-																							id="BtnModalPatientReview"
-																							class="u_GB1933133831 align-center gold-button" disabled
-																							style="color: #8c8c8c; font-size: x-large; -webkit-text-stroke: 0.5px rgb(0, 0, 0); ">Click Picture to Watch the video</button>
-																					</div>
+																<div class="dmRespColsWrapper" style="opacity: 1; ">
+																	<br></br>
+																	<button id="BtnModalPatientReview"
+																		class="u_GB1933133831 align-center gold-button"
+																		disabled
+																		style="color: #8c8c8c; font-size: x-large; -webkit-text-stroke: 0.5px rgb(0, 0, 0); ">Click
+																		Picture to Watch the video</button>
+																</div>
 																<div class="layout-container">
 																	<div class="photogallery-row" data-index="0">
 																		<!-- 4 Menu-->
@@ -3843,8 +3843,8 @@
 																		<!-- 5 End-->
 
 																		<!-- 6 -->
-																		<div class="photogallery-column  column-3" style="visibility: hidden;"
-																			data-index="1">
+																		<div class="photogallery-column  column-3"
+																			style="visibility: hidden;" data-index="1">
 																			<li class="vertical-height animated fadeInLeft"
 																				id="1787254904" data-index="1"
 																				style="animation-delay: 200ms;">
@@ -3951,7 +3951,7 @@
 																								name="redirect"
 																								value="https://www.drminx.com/ContactSuccessEmail.html">
 																							<!-- dont forget to change -->
-																						
+
 																							<div class="required small-12 dmRespDesignCol medium-5 large-5 medium-6 large-6 medium-7 large-7 medium-10 large-10 medium-12 large-12 color: rgb(0, 0, 0); font-size: larger; -webkit-text-stroke: 0.5px goldenrod; "
 																								id="1821692806"
 																								style="text-align: left;">
@@ -4029,7 +4029,8 @@
 																								</label>
 
 																								<!-- Message -->
-																								<textarea name="entry.542857840"
+																								<textarea
+																									name="entry.542857840"
 																									style="border-color: #cb9b51; "
 																									id="1506292446"
 																									required></textarea>
@@ -4251,7 +4252,8 @@
 																					data-hover-effect=""></span>
 																			</a>
 																			<a href="https://www.youtube.com/@drminxsbestanti-agingtips8999"
-																				target="_blank" style="visibility: visible;"
+																				target="_blank"
+																				style="visibility: visible;"
 																				dm_dont_rewrite_url="true"
 																				aria-label="twitter"
 																				onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Twitter&#39;)">
@@ -4299,16 +4301,34 @@
 		</div>
 	</div>
 
-	<!-- The Modal Pop up start-->
-	<div id="myModal" class="modal">
-		<!-- Modal content -->
-		<div class="modal-content" style="display: flex; justify-content: center;">
-			<iframe src="" id="iframe1" frameborder="0" scrolling="yes" height="600px" allowtransparency="true" >
-			</iframe> &nbsp;&nbsp;
-			<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-			<span class="close">&times;</span>
-			<font style="color: #F4F4F4;">Click picture<br> to play</font>
-		</div> 
+<!-- The Modal Pop up start-->
+	<div id="myModal" class="modal" >
+		<div class="modal-content" style="display: flex; justify-content: center;"   >
+			<table>
+				<tr style="align-items: center; align-content: center; text-align: center;" >
+					<td style="align-items: center; align-content: center;">
+						<a class=" dmDefaultGradient align-center gold-button shine-button dmCall dmNoMark dmWwr" >
+							<font style="color: #777676; font-size: 36px;">Click picture to play</font>
+						</a>
+					</td>
+				</tr>
+				<tr style="align-items: center; align-content: center; text-align: center;">
+					<td>
+						<iframe src="" id="iframe1" frameborder="0" scrolling="yes" height="600px" 
+							allowtransparency="true" >
+						</iframe> &nbsp;&nbsp;
+						<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+					</td>
+				</tr>
+				<tr style="align-items: center; align-content: center; text-align: center;">
+					<td style="align-items: center;" >
+						<a class="close dmDefaultGradient align-center gold-button dmCall dmNoMark dmWwr" >
+							<span class="close" >&nbsp;&nbsp;Close&nbsp;&nbsp;</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	<!-- The Modal Pop up End-->
 
